@@ -1,0 +1,9 @@
+export const GET_TV_REQUET = "GET_TV_REQUET"
+export const GET_TV_SUCCESS = "GET_TV_SUCCESS"
+export const GET_TV_FAIL = "GET_TV_FAIL"
+
+// ! ===> id <===
+export const GET_TV_DETAILS_REQUEST = "GET_TV_DETAILS_REQUEST";
+export const GET_TV_DETAILS_SUCCESS = "GET_TV_DETAILS_SUCCESS";
+export const GET_TV_DETAILS_FAIL = "GET_TV_DETAILS_FAIL";
+export const GET_TV_DETAILS_RESET = "GET_TV_DETAILS_RESET";
