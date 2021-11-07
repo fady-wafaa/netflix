@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+body {
+  background-color: #131722 !important;
+  color: #fff !important;
+  font-family: 'Montserrat Alternates', sans-serif !important;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar .collapse .navbar-nav {
+  width: 40%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.navbar .collapse .navbar-nav .active {
+  color: gold !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.1rem !important;
+  text-decoration: none !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: gold !important;
+}
+
+.card_item {
+  max-width: 20% !important;
+  overflow: hidden !important;
+  cursor: pointer;
+}
+
+.card_item .item {
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  top: 0;
+}
+
+.card_item .item .vote {
+  position: absolute !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 3% 5%;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 99 !important;
+}
+
+.card_item .item .vote .vol .fas {
+  font-size: 1.8rem !important;
+  color: #eeff01 !important;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.card_item .item .vote .vol .fas h6 {
+  color: #131722 !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card_item .item .vote .lan {
+  background-color: gold !important;
+  color: #131722 !important;
+}
+
+.card_item .item .vote .lan h6 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  border-radius: 10px !important;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px !important;
+  margin: 0 !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  text-transform: capitalize !important;
+}
+
+.card_item .item .img-item {
+  -o-object-fit: fill !important;
+     object-fit: fill !important;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.card_item .item .img-item:hover {
+  -webkit-transform: rotate(8deg) scale(1.2, 1.2) !important;
+          transform: rotate(8deg) scale(1.2, 1.2) !important;
+}
+
+.item {
+  overflow: hidden !important;
+  width: 100%;
+  height: 90vh !important;
+  position: relative;
+  top: 0;
+}
+
+.item .all_data {
+  width: 100%;
+  height: 100%;
+}
+
+.item .all_data .img_detl {
+  z-index: 1 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.item .all_data .bac {
+  z-index: 10 !important;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.item .all_data .data_post {
+  background: #000000c4 !important;
+  border-radius: 20px;
+  width: 80% !important;
+  margin: 20px 0 auto;
+  z-index: 88 !important;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 80% !important;
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  overflow: hidden !important;
+}
+
+.item .all_data .data_post .post_img {
+  width: 90% !important;
+  height: 100% !important;
+}
+
+.item .all_data .data_post .post_img img {
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.item .all_data .data_post .post {
+  text-align: start;
+  padding: 5% 0 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item .all_data .data_post .post h1 {
+  color: #e2cc00 !important;
+  font-size: 3rem !important;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.item .all_data .data_post .post p {
+  margin-block: 1.5rem !important;
+  color: white !important;
+  text-align: start !important;
+  width: 90%;
+  text-shadow: #020101 1px 2px 0px;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.item .all_data .data_post .post .detals {
+  margin-block: 1rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: start !important;
+      align-content: flex-start !important;
+  text-align: start !important;
+}
+
+.item .all_data .data_post .post .detals .eye,
+.item .all_data .data_post .post .detals .vote,
+.item .all_data .data_post .post .detals .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.item .all_data .data_post .post .detals .eye i,
+.item .all_data .data_post .post .detals .vote i,
+.item .all_data .data_post .post .detals .language i {
+  font-size: 2rem;
+  color: gold;
+}
+
+.item .all_data .data_post .post .detals .eye h5,
+.item .all_data .data_post .post .detals .vote h5,
+.item .all_data .data_post .post .detals .language h5 {
+  font-weight: bold !important;
+  font-size: 1.4rem !important;
+  margin-top: 0.5rem;
+  color: #04f3fc !important;
+  letter-spacing: 3px !important;
+  font-family: serif;
+  text-transform: capitalize !important;
+}
+
+.SignUp {
+  overflow: hidden;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 25, 56, 0.356)), to(rgba(1, 22, 43, 0.568))), -webkit-gradient(linear, left top, right top, from(#01222460), to(rgba(28, 21, 70, 0.26))), url("../assets/felipe-bustillo-4VDRCoNuvE0-unsplash.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(2, 25, 56, 0.356), rgba(1, 22, 43, 0.568)), linear-gradient(to right, #01222460, rgba(28, 21, 70, 0.26)), url("../assets/felipe-bustillo-4VDRCoNuvE0-unsplash.jpg") center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.SignUp .container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+  -ms-flex-item-align: end !important;
+      align-self: end !important;
+}
+
+.SignUp .container div form .form-group .form-control {
+  outline: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #04f3fc !important;
+  background-color: rgba(0, 0, 0, 0.322) !important;
+  caret-color: #04f3fc;
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 1px !important;
+}
+
+.SignUp .container div form .form-group .form-control:hover {
+  border: 0 !important;
+  background-color: transparent !important;
+  outline: none !important;
+  color: #04f3fc !important;
+  border-bottom: 1px solid #04f3fc !important;
+}
+
+.SignUp .container div form .form-group .form-control:focus {
+  caret-color: #04f3fc !important;
+  border: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent !important;
+  outline: none !important;
+  border-bottom: 1px solid #04f3fc !important;
+}
+
+.SignUp .container div form .form-group .form-control::-webkit-input-placeholder {
+  color: #0586b1 !important;
+}
+
+.SignUp .container div form .form-group .form-control:-ms-input-placeholder {
+  color: #0586b1 !important;
+}
+
+.SignUp .container div form .form-group .form-control::-ms-input-placeholder {
+  color: #0586b1 !important;
+}
+
+.SignUp .container div form .form-group .form-control::placeholder {
+  color: #0586b1 !important;
+}
+
+.LOGIN {
+  overflow: hidden;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 25, 56, 0.356)), to(rgba(1, 22, 43, 0.568))), -webkit-gradient(linear, left top, right top, from(#01222460), to(rgba(28, 21, 70, 0.26))), url("../assets/felipe-bustillo-4VDRCoNuvE0-unsplash.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(2, 25, 56, 0.356), rgba(1, 22, 43, 0.568)), linear-gradient(to right, #01222460, rgba(28, 21, 70, 0.26)), url("../assets/felipe-bustillo-4VDRCoNuvE0-unsplash.jpg") center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control {
+  outline: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid #04f3fc !important;
+  background-color: rgba(0, 0, 0, 0.322) !important;
+  caret-color: #04f3fc;
+  font-family: Arial, Helvetica, sans-serif !important;
+  letter-spacing: 1px !important;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control:hover {
+  border: 0 !important;
+  background-color: transparent !important;
+  outline: none !important;
+  color: #04f3fc !important;
+  border-bottom: 1px solid #04f3fc !important;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control:focus {
+  caret-color: #04f3fc !important;
+  border: transparent !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent !important;
+  outline: none !important;
+  border-bottom: 1px solid #04f3fc !important;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control::-webkit-input-placeholder {
+  color: #0586b1 !important;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control:-ms-input-placeholder {
+  color: #0586b1 !important;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control::-ms-input-placeholder {
+  color: #0586b1 !important;
+}
+
+.LOGIN .container div .all_Form form .form-group .form-control::placeholder {
+  color: #0586b1 !important;
+}
+
+.LOGIN .container div .all_Form .or {
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  margin-block: 20px;
+}
+
+.LOGIN .container div .all_Form .or::before {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  content: '';
+  width: 1px;
+  background-color: #d6f9fa;
+  height: 10px;
+}
+
+.LOGIN .container div .all_Form .or::after {
+  position: absolute;
+  bottom: -40%;
+  right: 50%;
+  content: '';
+  width: 1px;
+  background-color: #d6f9fa;
+  height: 10px;
+}
+
+.LOGIN .container div .all_Form .login_google_fac {
+  margin-top: 5% !important;
+  background: transparent !important;
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 !important;
+  height: 50px;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google {
+  width: 100% !important;
+  padding: 0 !important;
+  height: 76% !important;
+  overflow: hidden;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google .google {
+  width: 100%;
+  height: 100% !important;
+  background: transparent !important;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google .google .Submit {
+  width: 100%;
+  height: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  text-align: center !important;
+  background-color: gold !important;
+  color: #020101 !important;
+  padding: 0 !important;
+  border-radius: 5px;
+  border: 0;
+  width: 100%;
+  height: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  text-align: center !important;
+  background-color: gold !important;
+  color: #020101 !important;
+  padding: 0 !important;
+  border-radius: 5px;
+  border: 0;
+  overflow: hidden;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google .google .Submit h6 {
+  text-align: center !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  font-size: 1.1rem !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 400;
+  width: 90% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google .google .Submit span {
+  width: 10% !important;
+  height: 100% !important;
+  text-align: center !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google .google .Submit span i {
+  background: url("../assets/unnamed.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.LOGIN .container div .all_Form .login_google_fac .btn_google .google .Submit:hover {
+  background-color: #000 !important;
+  color: gold !important;
+}
+/*# sourceMappingURL=index.css.map */

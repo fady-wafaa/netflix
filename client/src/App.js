@@ -1,15 +1,19 @@
 import { Route, Switch ,Redirect } from "react-router-dom";
 // import Footer from "./layout/Footer/Footer";
 import Navbar from "./layout/Navbar/Navbar";
-import Home from './pages/Home/Home';
-import Logn from './pages/auth/Logn';
-import SingUP from './pages/auth/SingUP';
+
+
+import SignUp from './pages/auth/SignUp';
 import Movies from './pages/Movies/Movies';
 import NotFound from './pages/NotFound/NotFound';
 import MoviesId from './pages/MoviesID/MoviesId.jsx';
 
 import TV from "./pages/Tv/TV";
 import IdTv from './pages/tvID/IdTv';
+
+import ValidationPage from './pages/Validation/Pages.Validations';
+import LogIn from './pages/auth/LogIn';
+
 
 
 
@@ -20,13 +24,16 @@ function App() {
 
     <Navbar />
     <Switch>
-        <Route path='/home' component={Home}/>
-        <Route path='/logn' component={Logn}/>
-        <Route path='path' component={SingUP}/>
-        <Route path='/movie' component={Movies}/>
-        <Route path='/tv' component={TV}/>
-        <Route path='/tvID/:id' component={IdTv}/>
-        <Route path='/MoviesId/:id' component={MoviesId}/>
+      
+      <ValidationPage path='/movie' component={Movies} />
+      <ValidationPage path='/tv' component={TV} />
+      <ValidationPage path='/tvID/:id' component={IdTv} />
+      <ValidationPage path='/MoviesId/:id' component={MoviesId}/>
+      
+      
+      
+        <Route path='/logIn' component={LogIn}/>
+        <Route path='/signUp' component={SignUp}/>
         <Redirect exact from="/" to="/home" />
         <Route path='*' component={NotFound}/>
     </Switch>
